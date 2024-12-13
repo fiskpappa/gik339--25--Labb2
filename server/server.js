@@ -17,7 +17,7 @@ server.listen(3000, () =>
 );
 
 server.get("/users", (req, res) => {
-  const db = new sqlite3.Database("./gik339-Labb2.db");
+  const db = new sqlite3.Database("./gik339-labb2.db");
   const sql = "SELECT * FROM users";
   db.all(sql, (err, rows) => {
     if (err) {
